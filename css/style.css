@@ -1,0 +1,2055 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    background-color: #F3F2F0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #292929;
+    font-size: 0.95vw;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    line-height: 1.75;
+}
+
+.content {
+    width: 90%;
+    margin-left: 10%;
+    padding: 2vw 2vw 20vw 0;
+}
+
+
+a {
+    text-decoration-color: none;  /*リンクの色を消す*/
+    font-family: "Noto Sans JP", sans-serif;
+    color: #292929;
+    font-weight: 400;
+    text-decoration: none;
+    width: fit-content;
+}
+img {
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+
+p{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2vw;
+    text-shadow:
+    0 0 5px rgba(0,0,0,0.3),
+    0 0 10px rgba(0,0,0,0.2),
+    0 0 15px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+    color: #292929;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.midasi {
+    font-family: "Geologica", sans-serif;
+    font-size: 4.5vw;
+    color: #292929;
+    letter-spacing: 0.015rem;
+    line-height: 1;
+}
+
+
+.komidasi {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+    color: #292929;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.omidasi {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+    color: #292929;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+
+.roma {
+    font-family: "Geologica", sans-serif;
+    font-size: 0.95vw;
+    color: #292929;
+    letter-spacing: 0.015rem;
+    line-height: 1;
+}
+
+
+
+.bold {
+    font-weight: 500;
+}
+
+.text{
+    font-size: 0.95vw;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 1.7;
+}
+
+html,body {
+overflow-x: hidden;
+}
+
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+/*画像の下の隙間を消すコード*/
+
+img{
+	vertical-align:top;
+}
+
+
+.btn {
+    background-color: #292929;
+    border-radius: 100vw;
+    color: #ffffff;
+    padding: 0.2vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.btn img {
+    width: 0.8vw;
+    object-fit: contain;
+    
+}
+
+.solid {
+    background: #B6B6B6;
+    width: 100%;
+    height: 0.1vw;
+}
+
+
+
+
+/* 背景
+------------------------------- */
+
+
+
+
+/* HEADER
+------------------------------- */
+
+.pc_header {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding: 2vw;
+    position: fixed;
+    left: 0px;
+    height: 100vh;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #F3F2F0;
+}
+
+.pc_header.hidden {
+  opacity: 0;
+  pointer-events: none; /* フェードアウト時にクリックできないように */
+}
+
+.pc_header .menu_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65vw;
+}
+
+.pc_header .menu_box .btn {
+    background-color: #292929;
+    border-radius: 100vw;
+    color: #ffffff;
+    padding: 0.5vw 1vw;
+    margin-top: 2vw;
+    gap: 0.2vw;
+}
+
+
+.pc_header .menu_box .roma {
+    font-family: "Geologica", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+}
+
+.pc_header .menu_box .text {
+    font-weight: 500;
+}
+
+.sp_top {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* top_ga------------------------------- */
+
+/*
+
+.top_ga {
+    height: 640px;
+    background-image: url(../images/20241004_1545.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.top_ga .text_box {
+    width: 1000px;
+}
+
+.top_ga .no1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FF0000;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    padding: 0.2em;
+    line-height: 2.2;
+    background-color: #ffff;
+}
+
+.top_ga .no2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FF0000;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    padding: 0.2em;
+    line-height: 2.2;
+    background-color: #ffff;
+}
+
+*/
+
+
+
+
+/* area_top
+------------------------------- */
+
+.area_top {
+    position: relative;
+}
+
+.area_top img{
+    height: 90vh;
+    border-radius: 1vw;
+}
+
+.area_top .text_box {
+    position: absolute;
+    top: 42%;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.area_top .text {
+    color: #ffffff;
+    text-shadow:
+    0 0 5px rgba(0,0,0,0.3),
+    0 0 10px rgba(0,0,0,0.2),
+    0 0 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* area1
+---------------------------------------- */
+
+.area1 {
+    padding: 10vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area1 .box {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+
+/* area2------------------------------- */
+
+.area2 {
+    padding: 10vw 0 0 3vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.area2 .l {
+    width: 40%;
+}
+
+.area2 img {
+    height: 20vw;
+}
+
+.area2 .r {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+/* area3------------------------------- */
+
+.area3 {
+    padding: 10vw 0 0 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.area3 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列、幅は均等 */
+    gap: 3vw;
+    margin-top: 2vw;
+}
+
+.area3 a {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+}
+
+
+.area3 img {
+    object-fit: cover !important;
+    height: 18vw;
+    width: 100%;
+}
+
+
+/* area4------------------------------- */
+
+.area4 {
+    padding: 10vw 0 0 3vw;
+}
+
+.area4 .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    margin: 2vw 0;
+    margin-left: 5vw;
+}
+
+.area4 .l {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.area4 .box .r {
+    width: 35%;
+}
+
+.area4 .box .r img {
+    height: 18vw;
+}
+
+.area4 .komidasi {
+    color: #858585 !important;
+    font-weight: 400;
+}
+
+
+
+
+/* area5------------------------------- */
+
+.area5 {
+    padding: 10vw 0 0 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    
+}
+
+.area5 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3列、幅は均等 */
+    gap: 3vw;
+    margin-top: 2vw;
+}
+
+.area5 .box {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.area5 .l {
+    width: 30%;
+}
+
+.area5 .l img {
+    height: 15vw;
+}
+
+.area5 .r {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+/* area6------------------------------- */
+
+
+.area6 {
+    padding: 10vw 0 0 3vw;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.area6 .l {
+    width: 40%;
+}
+
+.area6 .r {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 3vw 0;
+}
+
+.area6 .container {
+    margin-top: 2vw;
+}
+
+.area6 .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+    padding: 1vw 0;
+}
+
+.area6 img {
+    height: 100%;
+}
+
+.area6 .solid {
+    margin-bottom: 1.5vw;
+}
+
+
+
+/* リセットCSS */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 外枠 */
+article {
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  background-color: whitesmoke;
+}
+
+/* アコーディオン　見出し部分 */
+details > summary {
+  cursor: pointer;
+  padding: 1vw 1.5vw;
+  background-color: #ffffff70;
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+}
+
+/* アコーディオン　見出し部分　オープン時 */
+details[open] > summary {
+  background-color: #ffffff70;
+  border-bottom: none;
+}
+
+/* アコーディオン　内容部分 */
+details > div {
+  padding: 1vw;
+
+}
+
+/* アコーディオン　内容部分　オープン時 */
+details[open] > div {
+  border-top-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* アコーディオン　見出し部分　プラス・マイナスのマーク */
+details {
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: '＋';
+  top: 1.2vw;
+  right: 3vw;
+}
+details[open] > summary::after {
+  content: '−';
+  top: 1.2vw;
+  right: 3vw;
+}
+
+/* アコーディオン　Safariの▲マークを消す */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* アコーディオン間のスペース */
+details + details {
+  margin-top: 1vw;
+  width: 100%;
+}
+
+
+
+summary .text {
+    color: #1c1c1c;
+    font-weight: 400;
+}
+
+
+.w-b{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    margin-right: 2vw;
+    color: #2291BF;
+}
+
+.w-a{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    margin-right: 2vw;
+    color: #ffffff;
+}
+
+
+
+/* area7------------------------------- */
+
+.area7 {
+    padding: 10vw 0 0 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.area7 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.area7 .box {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.area7 .l {
+    width: 40%;
+}
+
+.area7 .l img {
+    height: 18vw;
+}
+
+.area7 .r {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 40%;
+}
+
+
+/* cta------------------------------- */
+
+.cta {
+    padding: 10vw 0 0 10vw;
+}
+
+.cta .container {
+    display: flex;
+}
+
+.cta .box {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 33%;
+}
+
+.solid_2 {
+    background-color: #B6B6B6;
+    width: 0.1vw;
+}
+
+.cta .container:nth-child(2) {
+    border-top: solid #B6B6B6 0.1vw;
+}
+
+.cta .roma {
+    color: #ffffff;
+}
+
+
+
+/* footer------------------------------------------------------------------------------------------------ */
+
+.page-fotter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292929;
+    padding: 2vw;
+}
+
+.page-fotter .btn {
+    color: #292929;
+    background-color: #ffffff;
+    margin-top: 2vw;
+}
+
+.page-fotter a {
+    font-weight: 300;
+}
+
+.page-fotter .box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+.page-fotter .logo {
+    width: 10vw;
+}
+
+.page-fotter p ,
+.page-fotter a {
+    color: #ffffff;
+    font-size: 0.95vw;
+    font-weight: 200;
+}
+
+.page-fotter .l {
+    width: 70%;
+    display: flex;
+    gap: 5vw;
+}
+
+
+.page-fotter .r {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.page-fotter .r img {
+    width: 250px;
+}
+
+.page-fotter .icon_box {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    height: 70px;
+}
+
+.page-fotter .icon_box a{
+    width: 50px;
+}
+
+.page-fotter span {
+    width: 1px;
+    height: 20px;
+    background-color: #ffff;
+}
+
+
+
+
+/* about ======================================================================================== */
+
+.about .content {
+    background-color: #727272;
+    padding-top: 15vw;
+}
+
+.about p, .about h1, .about h2 {
+    color: #ffffff;
+}
+
+.about .text {
+    font-weight: 300;
+}
+
+.page_title {
+    padding: 0 0 0 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+/* about area1------------------------------- */
+
+
+.about .area1 {
+    padding: 6vw 0 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    width: 70%;
+}
+
+/* about area2------------------------------- */
+
+.about .area2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    width: 90%;
+}
+
+.about .area2 .box {
+    display: flex;
+    gap: 6vw;
+}
+
+.about .area2 img p {
+    width: 70%;
+}
+
+.about .area2 img {
+    height: auto;
+    width: 30%;
+}
+
+
+
+/* about area3------------------------------- */
+
+
+.about .area3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    width: 90%;
+}
+
+.about .area3 .container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 0;
+
+}
+
+.about .area3 .box {
+    display: flex;
+    gap: 6vw;
+    padding: 2.4vw 0 0.6vw 0;
+}
+
+
+
+/* works ======================================================================================== */
+
+.works .content, .news .content, .contact .content, .concept .content, .media .content, .media .content, .blog .content {
+    padding-top: 15vw;
+}
+
+.works .page_title .midasi {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 1.5;
+}
+
+
+
+.works .container, .news .container {
+    padding: 6vw 0 0 03vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列、幅は均等 */
+    gap: 3vw;
+}
+
+.works .container a, .news .container a  {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+}
+
+
+.works .container img, .news .container img {
+    object-fit: cover !important;
+    height: 18vw;
+    width: 100%;
+}
+
+
+
+/* news ======================================================================================== */
+
+
+
+.day {
+    color: #858585;
+}
+
+
+/* concept ======================================================================================== */
+
+/* concept area1------------------------------- */
+
+.concept .area1 {
+    padding: 6vw 0 0 3vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.concept .area1 .l , .concept .area1 .r {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.concept .area1 .r  img {
+    height: 27vw;
+}
+
+.concept .area1 span {
+    font-weight: 700;
+}
+
+/* concept area2 ------------------------------- */
+
+.concept .area2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    width: 90%;
+}
+
+.concept .area2 .container {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.concept .area2 .container_2 {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 5vw;
+    margin-top: 5vw;
+}
+
+.concept .area2 .container_2 img {
+    height: 18vw;
+}
+
+.concept .area2 .container_2 .l  {
+    width: 40%;
+}
+
+.concept .area2 .container_2 .r {
+    width: 60%;
+}
+
+
+/* concept area3 ------------------------------- */
+
+.concept .area3 .container {
+    display: flex;
+    align-items: center;
+}
+
+.concept .area3 .container .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.concept .area3 .container .solid {
+    width: 0.1vw;
+    height: 12vw;
+}
+
+.area3 .thin {
+    color: #858585;
+}
+
+
+
+
+
+/* media ======================================================================================== */
+
+.media .container {
+   padding: 6vw 0 0 3vw;
+   margin-left: 30%;
+}
+
+.media .container .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.media .container .box .l {
+    width: 60%;
+}
+
+.media .container .box .r {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media .container .box img {
+    height: 15vw;
+    object-fit: contain;
+}
+
+
+
+
+
+/* blog ======================================================================================== */
+
+
+.blog .page_title .midasi {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 1.5;
+}
+
+.blog .container {
+    padding: 6vw 0 0 3vw;
+}
+
+.blog .container .text {
+    width: 90%;
+}
+
+
+
+/* case ======================================================================================== */
+
+.case .area_top {
+    margin-left: 10%;
+}
+
+.case .area_top img {
+    border-radius: 0;
+    height: 100vh;
+}
+
+/* case area1 ------------------------------- */
+
+.case .area1 {
+    padding: 6vw 0 0 3vw;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.case .area1 .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+/* case area2 ------------------------------- */
+
+.case .area2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 3vw;
+}
+
+.case .midasi {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 1.5;
+}
+
+.case .komidasi {
+    font-size: 2vw;
+}
+
+.case .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+}
+
+.case .container img{
+    object-fit: contain;
+    height: 21vw;
+}
+
+
+
+
+/* contact ======================================================================================== */
+
+.contact_area1 .wrapper_w {
+    margin: 5vw 0 10vw 0;
+}
+
+
+
+.contact_area1 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact_area1 .contact a {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact_area1 .contact .required {
+    background-color: #cc403b;
+    border-radius: 0.5vw;
+    color: #ffff;
+    margin-left: 0.5vw;
+    padding: 0.2vw 0.5vw;
+    font-size: 1vw;
+}
+
+.contact_area1 form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact_area1 form div{
+    margin-bottom: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_area1 form div:nth-child(8) {
+    width: fit-content;
+    margin-top: 2vw;
+}
+
+.contact_area1 label{
+    font-size: 1.2vw;
+    color: #1c1c1c;
+    display: block;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 0.6vw;
+}
+
+
+.contact_area1 input[type="text"],
+.contact_area1 input[type="email"],
+.contact_area1 input[type="tel"],
+.contact_area1 textarea,
+.contact_area1 select{
+    background: #ececec;
+    padding: 1vw;
+    font-size: 1.2vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+}
+
+.contact_area1 input[type="text"],
+.contact_area1 input[type="email"],
+.contact_area1 input[type="tel"],
+.contact_area1 select{
+    width: 70%;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact_area1 textarea{
+    width: 70%;
+    height: 10vw;
+}
+
+.contact_area1 input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+
+
+
+.contact_area1 .underbutton {
+    width: 350px;
+    margin: 50px 0 30px 0;
+    color: #ffff;
+}
+
+.contact_area1 .checkbox {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact_area1 .checkbox label {
+    margin-left: 10px;
+}
+
+.contact_area1 .contact button {
+    width: 20vw;
+    padding: 20px;
+    background-color: #2291BF;
+    color: #ffff;
+    border-radius: 100vw;
+    font-weight: 500;
+    margin-top: 3vw;
+    position: relative;
+}
+
+
+
+
+/* アニメーション ----------------------------------------*/
+
+
+
+/* 初期状態：下にずらして透明 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 表示される時 */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 表示される時 */
+.fade-up2.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* ここで遅延を設定 */
+}
+
+.fade-up3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 表示される時 */
+.fade-up3.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s; /* ここで遅延を設定 */
+}
+
+
+
+
+
+.fade-up-onload {
+  opacity: 0;
+  transition: opacity 1.8s ease; /* じわっと */
+}
+
+.fade-up-onload.visible {
+  opacity: 1;
+}
+
+.fade-up-onload2 {
+  opacity: 0;
+  transition: opacity 1.8s ease; /* じわっと */
+}
+
+.fade-up-onload2.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* ここで遅延を設定 */
+}
+
+
+
+
+
+/*モバイル版
+--------------------------------------------------------------------------モバイル版*/
+@media (max-width: 600px) {
+
+
+    body {
+        font-size: 3.5vw;
+    }
+
+
+    p {
+        line-height: 1.7;
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .text {
+        font-size: 3.5vw;
+    }
+
+    a {
+        font-size: 4vw;
+    }
+
+    .midasi {
+        font-size: 13vw;
+    }
+
+    .komidasi {
+        font-size: 4.5vw;
+    }
+
+    .omidasi {
+        font-size: 9vw;
+    }
+
+    .roma {
+        font-size: 4vw;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 5vw;
+        padding-bottom: 35vw;
+    }
+
+    .btn {
+        padding: 1vw 4vw;
+        gap: 6vw;
+    }
+
+    .btn img {
+        width: 3vw;
+    }
+
+    .solid {
+        height: 0.3vw;
+    }
+
+    /* ヘッダー------------------------------- */
+
+    .pc_header {
+        display: none;
+    }
+
+    .sp_top{
+        width: 100%;
+        display: block;
+        padding: 3vw;
+        position: fixed;
+        z-index: 100;
+        background-color: #F3F2F0;
+    }
+    
+
+    .sp_top header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .sp_top h1 {
+        margin-top: 520px;
+        margin-left: 5%;
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+
+
+    .sp_top .logo_box img{
+        width: 12vw;
+        height: auto;
+    }
+
+
+
+
+
+    /* ハンバーガーボタンのデザイン */
+    .drawer__button {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        z-index: 999; /* メニューを開いている時もクリックできるよう設定 */
+    }
+    /* ハンバーガーボタン内の線 */
+    .drawer__button > span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 3px;
+        background-color: #292929;
+        transform: translateX(-50%);
+    }
+    .drawer__button > span:first-child {
+        transform: translate(-50%, calc(-50% - 0.5rem));
+        transition: transform 0.3s ease;
+    }
+    .drawer__button > span:nth-child(2) {
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease;
+    }
+    .drawer__button > span:last-child {
+        transform: translate(-50%, calc(-50% + 0.5rem));
+        transition: transform 0.3s ease;
+    }
+    /* 展開時のデザイン */
+    .drawer__button.active > span:first-child {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: #ffffff;
+    }
+    .drawer__button.active > span:nth-child(2) {
+        opacity: 0;
+    }
+    .drawer__button.active > span:last-child {
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: #ffffff;
+    }
+    /* メニューのデザイン */
+    .drawer__nav {
+        position: fixed; /* 追従ヘッダーなどでも表示できるよう設定しておく */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+    .drawer__nav.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+
+    .drawer__nav__inner {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #292929;
+        padding: 5rem 0rem;
+        margin: 0 0 0 auto;
+        overflow: scroll;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .drawer__nav.active .drawer__nav__inner {
+        transform: translateX(0);
+    }
+
+    .drawer__nav__inner a{
+        color: #ffffff;
+        font-family: 400;
+        width: 100%;
+        text-align: center;
+        padding: 5vw;
+    }
+
+    .drawer__nav__inner .btn {
+        background-color: #F3F2F0;
+        color: #292929;
+        width: fit-content;
+        padding: 3vw 9vw;
+        margin-top: 3vw;
+    }
+
+
+    /* ハンバーガーメニュー展開時、背景を固定 */
+    body.active {
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+
+    .contact_btn_box {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    .drawer__nav__inner .logo {
+        width: 60vw;
+        margin-bottom: 3vw;
+    }
+
+
+
+    /* area_top------------------------------- */
+
+    .area_top {
+        height: 94vh;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 12vw;
+    }
+
+    .area_top img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        border-radius: 3vw;
+    }
+
+    .area_top h1 {
+        color: #292929;
+        text-shadow: none;
+        font-size: 8vw;
+        padding: 1vw;
+    }
+
+    .area_top .text_box {
+        position: static;
+        gap: 5vw;
+    }
+
+    .area_top .text {
+        color: #292929;
+        text-shadow: none;
+    }
+
+
+
+    /* area1------------------------------- */
+
+    .area1 {
+        padding: 25vw 0 0 0;
+    }
+
+    .area1 .box {
+        gap: 9vw;
+    }
+
+
+    /* area2------------------------------- */
+
+    .area2 {
+        padding: 25vw 0 0 0;
+        flex-direction: column;
+        gap: 12vw;
+    }
+
+    .area2 .l {
+        width: 100%;
+    }
+
+    .area2 .r {
+        gap: 9vw;
+    }
+
+    .area2 img {
+        height: 50vw;
+    }
+
+
+
+    /* area3------------------------------- */
+
+    .area3 {
+        padding: 25vw 0 0 0;
+        gap: 9vw;
+    }
+
+    .area3 .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6vw;
+    }
+
+    .area3 img {
+        height: 48vw;
+    }
+
+    /* area4------------------------------- */
+
+    .area4 {
+        padding: 25vw 0 0 0;
+    }
+
+    .area4 .box {
+        margin: 18vw 0;
+        flex-direction: column;
+        gap: 12vw;
+    }
+
+    .area4 .l {
+        gap: 6vw;
+    }
+
+    .area4 .box .r {
+        width: 100%;
+    }
+
+    .area4 .box .r img {
+        height: 48vw;
+    }
+
+    
+
+    /* area5------------------------------- */
+
+
+    .area5 {
+        padding: 35vw 0 0 0;
+        gap: 9vw;
+    }
+
+    .area5 .container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 12vw;
+        gap: 6vw;
+    }
+
+    .area5 .l img {
+        height: 40vw;
+        gap: 6vw;
+    }
+
+    .area5 .r {
+        width: 70%;
+    }
+
+    .area5 .box {
+        gap: 6vw;
+    }
+
+    /* area6------------------------------- */
+
+    .area6 {
+        padding: 25vw 0 0 0;
+    }
+
+    .area6 .r {
+        gap: 9vw;
+    }
+
+    .area6 .container {
+        margin-top: 6vw;
+        margin-left: 20%;
+    }
+
+    .area6 .box {
+        padding: 3vw 0;
+        gap: 3vw;
+    }
+
+
+    .area6 .solid {
+        margin-bottom: 4.5vw;
+    }
+
+    /* area7------------------------------- */ 
+
+    .area7 {
+        padding: 25vw 0 0 0;
+        gap: 12vw;
+    }
+
+    .area7 .container {
+        gap: 9vw;
+    }
+
+    .area7 .box {
+        flex-direction: column;
+        margin-left: 20%;
+        gap: 9vw;
+    }
+
+    .area7 .l  {
+        width: 100%;
+    }
+
+    .area7 .r {
+        width: 100%;
+        gap: 6vw;
+    }
+
+    .area7 .l img {
+        height: 48vw;
+    }
+
+
+    /* cta------------------------------- */ 
+
+    .cta {
+        padding: 25vw 0 0 0;
+    }
+
+    .cta .container {
+        flex-direction: column;
+    }
+
+    .cta .box {
+        width: 100%;
+        padding: 12vw;
+        gap: 9vw;
+    }
+
+    .solid_2 {
+        height: 0.3vw;
+        width: 100%;
+    }
+
+
+    /* footer------------------------------- */
+
+    .page-fotter {
+        padding: 5vw;
+        align-items: start;
+    }
+
+    
+    .page-fotter .l {
+        flex-direction: column;
+    }
+
+    .page-fotter .box {
+        flex-direction: column;
+        gap: 10vw;
+        margin-bottom: 15vw;
+    }
+
+    footer .jyoho {
+        margin-top: 5vw;
+    }
+
+    .page-fotter .logo {
+        width: 25vw;
+    }
+
+    .page-fotter p, .page-fotter a {
+        font-size: 3vw;
+    }
+
+    .page-fotter .r {
+        gap: 2vw;
+    }
+
+
+
+
+    /* about ======================================================================================== */
+
+    .about .content {
+        padding-top: 35vw;
+    }
+
+    .page_title {
+        padding: 0;
+        gap: 3vw;
+    }
+
+    
+
+
+    /* about area1------------------------------- */ 
+
+    
+    .about .area1, .concept .area1 {
+        padding: 10vw 0 0 0;
+        width: 100%;
+        gap: 9vw;
+    }
+
+    .about .area1 .text  {
+        width: 90%;
+    }
+
+    /* about area2------------------------------- */ 
+
+
+    .about .area2 {
+        gap: 9vw;
+    }
+
+    .about .area2 .box {
+        flex-direction: column;
+        gap: 9vw;
+    }
+
+    .about .area2 img {
+        width: 50%;
+    }
+
+
+    /* about area3------------------------------- */ 
+
+    .about .area3 .container {
+        width: 100%;
+    }
+
+    .about .area3 .box {
+        padding: 6vw 0 3vw 0;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+
+
+    /* works ======================================================================================== */
+
+    .works .content, .news .content, .contact .content, .concept .content, .media .content, .blog .content {
+        padding-top: 35vw;
+    }
+
+    .works .page_title .midasi {
+        font-size: 10vw;
+    }
+
+
+    .works .container, .news .container, .contact .container, .blog .container {
+        padding: 10vw 0 0 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 9vw;
+    }
+
+    .works .container img, .news .container img, .contact .container img {
+        height: 48vw;
+    }
+
+
+
+    /* news ======================================================================================== */
+
+    /* media ======================================================================================== */
+
+    .media .container {
+        padding: 10vw 0 0 0;
+        margin-left: 10%;
+    }
+
+    .media .container .box {
+        padding: 6vw 0;
+    }
+
+    .media .container .box img {
+        height: 21vw;
+    }
+
+
+    /* concept ======================================================================================== */
+
+    /* concept area1------------------------------- */ 
+
+    .concept .area1 {
+        flex-direction: column;
+    }
+
+    .concept .area1 .l, .concept .area1 .r {
+        width: 100%;
+        gap: 9vw;
+    }
+
+    .concept .area1 .r img {
+        height: 48vw;
+    }
+
+
+    /* concept area2------------------------------- */ 
+
+    .concept .area2 {
+        width: 100%;
+        gap: 9vw;
+    }
+
+    .concept .area2 .container {
+        gap: 3vw;
+        margin-left: 10%;
+    }
+
+    .concept .area2 .container_2 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 12vw;
+        gap: 9vw;
+    }
+
+    .concept .area2 .container_2 .l {
+        width: 100%;
+    }
+
+    .concept .area2 .container_2 .l img {
+        height: 48vw;
+    }
+
+    .concept .area2 .container_2 .r {
+        width: 100%;
+    }
+
+
+    /* concept area3 ------------------------------- */ 
+
+    .concept .area3 .container {
+        flex-direction: column;
+        gap: 9vw;
+        margin-left: 10%;
+    }
+
+    .concept .area3 .container .box {
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .concept .area3 .container .solid {
+        width: 100%;
+        height: 0.3vw;
+    }
+
+    /* works ======================================================================================== */
+
+    .blog .page_title .midasi {
+        font-size: 6vw;
+    }
+
+
+    /* case ======================================================================================== */
+
+    .case .area_top {
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+        margin-top: 17vw;
+    }
+
+    .case .area_top  img {
+        height: 40vh;
+    }
+
+    .case .midasi {
+        font-size: 6vw;
+    }
+
+    .case .komidasi {
+        font-size: 4.5vw;
+    }
+
+
+    .case .area1 {
+        padding: 10vw 0 0 0;
+        gap: 9vw;
+    }
+
+    .case .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .case .container img {
+        height: auto;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* contact ======================================================================================== */
+
+
+
+    .contact_area1 .wrapper_w {
+        margin: 10vw 0 20vw 0;
+    }
+    
+    .contact_area1 label {
+        font-size: 4vw;
+    }
+
+    .contact_area1 .contact .inner {
+        width: 90%;
+
+    }
+
+    .contact_area1 form {
+        width: 100%;
+    }
+
+    .contact_area1 form div {
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+
+    .contact_area1 .contact label {
+        margin-bottom: 10px;
+        margin: 0 0 3vw 0;
+    }
+
+    .contact_area1 input[type="text"], .contact_area1 input[type="email"], .contact_area1 input[type="tel"], .contact_area1 select {
+        width: 100%;
+        height: 10vw;
+        border-radius: 2vw;
+    }
+
+    .contact_area1 input[type="text"], .contact_area1 input[type="email"], .contact_area1 input[type="tel"], .contact_area1 textarea, .contact_area1 select {
+        font-size: 4vw;
+    }
+
+    .contact_area1 textarea {
+        width: 100%;
+    }
+
+    .contact_area1 input[type="image"]{
+        width: 100%;
+        margin-top: 20px;
+
+
+    }
+
+    .contact_area1 .contact .required {
+        font-size: 3vw;
+        margin-left: 2.5vw;
+        padding: 0.2vw 0.8vw;
+    }
+
+    .contact_area1 input[type="text"], .contact_area1 input[type="email"], .contact_area1 input[type="tel"], .contact_area1 textarea, .contact_area1 select {
+        padding: 2vw;
+    }
+
+    .contact_area1 textarea {
+        height: 35vw;
+    }
+
+    .contact_area1 input[type="text"], .contact_area1 input[type="email"], .contact_area1 input[type="tel"], .contact_area1 textarea, .contact_area1 select {
+        border-radius: 2vw;
+    }
+
+    .contact_area1 .contact button {
+        width: 50vw;
+    }
+
+
+
+}
